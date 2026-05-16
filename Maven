@@ -1,0 +1,65 @@
+//Configure Maven in Jenkins
+//Set up Maven as a tool in Jenkins to enable builds.
+
+Go to Manage Jenkins → Global Tool Configuration → Maven Installation
+
+Click Add Maven
+
+Provide a name (e.g., Maven-3.8.6)
+
+Save the configuration
+
+
+//Create or Open a Jenkins Job
+//Prepare the job where Maven will be used.
+
+Navigate to your Jenkins dashboard
+
+Select an existing job or create a new one
+
+//Add Maven Build Step
+//Specify Maven goals for the build process.
+
+In job configuration → Build Steps → Invoke top-level Maven targets
+
+Select the Maven installation you created earlier
+
+Enter goals such as clean install or clean package
+
+Do not prefix with mvn — Jenkins automatically uses Maven
+
+
+// Save and Trigger Build
+// Run the job to verify Maven execution.
+
+Click Save
+
+Select Build Now to start the process
+
+
+// Handle Build Failures
+// Common Issues
+// Resolve frequent problems encountered during Maven builds.
+
+Ensure the correct Maven installation is selected in the build step
+
+Verify that a valid POM.xml file exists in the project root
+
+Without a POM.xml, the build will fail
+
+
+//Useful Maven Commands
+//Common commands to run Maven tasks.
+
+mvn compile
+
+mvn test
+
+mvn package
+
+mvn install
+
+mvn clean
+
+Summary
+By configuring Mave
